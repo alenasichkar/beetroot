@@ -1,0 +1,57 @@
+@font-face {
+    font-family: MyriadPro-Regular; /* Имя шрифта */
+    src: url(MyriadPro-Regular.otf); /* Путь к файлу со шрифтом */
+}
+
+body {
+  margin: 0;
+  color: #191970;
+  font-family: MyriadPro-Regular;
+  background-color: #E8E5FD;
+}
+
+/*HEADER*/
+header {
+  text-align: center;
+  background-color: #0B0248;
+  color: white;
+  padding: 10px 0;
+  font-size: 20px;
+}
+header img {
+  width: 190px;
+}
+
+/*MAIN*/
+main {
+  margin: 0 50px;
+}
+main h2 {
+  color: black;
+}
+section:nth-child(2n){
+  color: black;
+}
+.lang li {
+  font-style: italic;
+}
+
+/*FOOOTER*/
+footer {
+  background-color: #0B0248;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+footer img {
+  width: 70px;
+}
+footer img:last-child {
+  margin-right: 20px;
+}
+.copy {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  margin-right: 20px;
+}
