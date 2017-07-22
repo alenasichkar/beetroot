@@ -27,9 +27,7 @@ header .image {
 main {
   margin: 0 50px;
 }
-main h2 {
-  color: black;
-}
+main h2,
 section:nth-child(2n){
   color: black;
 }
@@ -39,6 +37,7 @@ section:nth-child(2n){
 
 /*FOOOTER*/
 footer {
+  text-align: center;
   background-color: #0B0248;
   color: white;
   position: relative;
