@@ -40,16 +40,19 @@ section:nth-child(2n){
 /*FOOOTER*/
 footer {
   background-color: #0B0248;
-  text-align: center;
   color: white;
   position: relative;
   padding: 5px 0;
 }
+.social {
+  margin: auto;
+  width: 185px;
+}
 footer img {
   width: 70px;
 }
-footer img:last-child {
-  margin-right: 20px;
+footer a:last-child {
+  margin-left: 20px;
 }
 .copy {
   position: absolute;
