@@ -18,7 +18,8 @@ header {
   padding: 10px 0;
   font-size: 20px;
 }
-header img {
+header .image {
+  margin: auto;
   width: 190px;
 }
 
