@@ -38,7 +38,7 @@ body {
   border: 2px solid #fff;
 }
 .list-cities:hover .list-city-item:not(:hover) {
-    /*opacity: 0.5;*/
+    opacity: 0.5;
     /*background-blend-mode:hard-light;*/
 }
 .list-city-item {
@@ -53,10 +53,10 @@ body {
   padding: 30px 10px;
   /*opacity: 0.75;*/
 }
-/*.list-city-item:hover {
+.list-city-item:hover {
     cursor: pointer;
     opacity: 1;
-}*/
+}
 .item-lisbon {
   width: 50%;
   background-color: #3399CC;
