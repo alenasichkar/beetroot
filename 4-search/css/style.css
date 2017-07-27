@@ -10,6 +10,11 @@ body {
   font-weight: bold;
 }
 
+::-webkit-input-placeholder {color:#C2C2C2;}
+::-moz-placeholder          {color:#C2C2C2;}/* Firefox 19+ */
+:-moz-placeholder           {color:#C2C2C2;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#C2C2C2;}
+
 .form {
   width: 100%;
   max-width: 1000px;
