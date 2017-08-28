@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: url("../fonts/MuseoSansCyrl.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-size: 14px;
+  color: #e1e1e1;
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: 'MuseoSansCyrl'; }
+
+.main-container {
+  background: url(../img/background.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  padding: 100px 15px; }
+
+.container {
+  padding: 20px;
+  height: 390px;
+  max-width: 685px;
+  background-color: #111a28;
+  margin: 0 auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .container__logo {
+    position: absolute;
+    top: 20px;
+    left: 20px; }
+  .container__photo--block {
+    height: 160px;
+    max-width: 335px;
+    overflow: hidden; }
+  .container__photo {
+    width: 100%; }
+
+.content {
+  padding: 15px; }
+  .content__title {
+    font-size: 24px; }
+  .content__subtitle {
+    font-size: 24px;
+    margin-bottom: 10px; }
+  .content__description {
+    margin-bottom: 20px; }
+  .content__stars--item {
+    margin-bottom: 20px; }
+  .content__btn {
+    background-color: transparent;
+    border: 1px solid #e1e1e1;
+    padding: 12px 15px;
+    color: #e1e1e1;
+    font-size: 14px;
+    cursor: pointer; }
+    .content__btn--angle {
+      margin-left: 10px; }
+    .content__btn--add {
+      display: block;
+      margin-top: 25px;
+      background-color: #202835;
+      padding: 15px 50px; }
+
+.active {
+  color: #f7bf16; }

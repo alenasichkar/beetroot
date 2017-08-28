@@ -1,0 +1,16 @@
+body {
+    font-size: 16px;
+    color: $black;
+    min-width: 320px;
+    overflow-x: hidden;
+    background-color: $violet;
+    padding: 50px 10px;
+  }
+ 
+  input:focus {
+    border: none;
+  }
+  
+  .text_uppercase {
+    text-transform: uppercase;
+  }

@@ -1,0 +1,76 @@
+@import './parts/_reset.scss';
+@import './parts/_fonts.scss';
+@import './parts/_colors.scss';
+@import './parts/_mixins.scss';
+@import './parts/_base.scss';
+
+.main-container {
+  background: url(../img/background.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  padding: 100px 15px;
+}
+.container {
+  padding: 20px;
+  height: 390px;
+  max-width: 685px;
+  background-color: $darkBlue;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  &__logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  &__photo--block {
+    height: 160px;
+    max-width: 335px;
+    overflow: hidden;
+  }
+  &__photo {
+    width: 100%;
+  }
+}
+.content {
+  padding: 15px;
+  &__title {
+    font-size: 24px;
+  }
+  &__subtitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  &__description {
+    margin-bottom: 20px;
+  }
+  &__stars--item {
+    margin-bottom: 20px;
+  }
+  &__btn {
+    background-color: transparent;
+    border: 1px solid $lightGray;
+    padding: 12px 15px;
+    color: $lightGray;
+    font-size: 14px;
+    cursor: pointer;
+    &--angle {
+      margin-left: 10px;
+    }
+    &--add {
+      display: block;
+      margin-top: 25px;
+      background-color: $lightBlue;
+      padding: 15px 50px;
+    }
+  }
+}
+.active {
+  color: $yellow;
+}
