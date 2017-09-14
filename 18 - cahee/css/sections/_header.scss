@@ -1,0 +1,88 @@
+.header {
+    background: url(./../img/header-background.png) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding-top: 30px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--nav {
+            align-content: center;
+        }
+    }
+    &__nav--item {
+        font-family: 'Raleway-Bold';
+        margin-right: 40px;
+        border-top: 2px solid transparent;
+        color: $black;
+        padding: 2px;
+        @include transition;
+        &--active {
+            border-top: 2px solid $orange;
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
+        &:hover {
+            border-top: 2px solid $orange;            
+        }
+    }
+    &__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        min-height: calc(100vh - 56px - 30px);
+        &--title {
+            font-family: 'Raleway-Heavy';
+            font-size: 60px;
+            margin-bottom: 35px;
+        }
+        &--subtitle {
+            font-family: 'Raleway-Light';
+            font-size: 17px;
+            max-width: 370px;
+            margin-bottom: 35px;
+        }
+        &--btn {
+            height: 55px;
+            width: 200px;
+            background-color: $orange;
+            color: $white;
+            font-family: 'Raleway-Light';
+            font-size: 20px;
+            border: 2px solid $orange;
+            box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+            cursor: pointer;
+            @include transition;
+            &:hover {
+                background-color: transparent;
+                color: $orange;
+            }
+        }
+    }
+    &__btn {
+        width: 22px;
+        height: 36px;
+        border: 1px solid $black;
+        border-radius: 11px;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        @include transition;
+        &--animate {
+            display: inline-block;
+            width: 2px;
+            height: 9px;
+            background-color: $black;
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
