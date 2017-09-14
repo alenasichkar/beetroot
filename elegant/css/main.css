@@ -220,13 +220,13 @@ input:focus {
   background-color: #222222;
   margin-bottom: 90px; }
 .works__block {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 80px; }
 .works__item {
-  margin-right: 30px;
   height: 420px;
   max-width: calc((100%-60px)/3);
   position: relative;
@@ -327,9 +327,7 @@ input:focus {
       width: 300px;
       height: 50px;
       background-color: transparent;
-      border-top: 2px solid transparent;
-      border-left: 2px solid transparent;
-      border-right: 2px solid transparent;
+      border: none;
       border-bottom: 2px solid #afafaf;
       font-family: 'Lato-Regular';
       font-size: 18px;
@@ -337,14 +335,13 @@ input:focus {
       padding: 10px;
       color: #fffefe; }
       .footer__form--name:focus {
-        border: 2px solid #fffefe; }
+        border-bottom: 2px solid #fffefe;
+        outline: none; }
     .footer__form--email {
       width: 300px;
       height: 50px;
       background-color: transparent;
-      border-top: 2px solid transparent;
-      border-left: 2px solid transparent;
-      border-right: 2px solid transparent;
+      border: none;
       border-bottom: 2px solid #afafaf;
       font-family: 'Lato-Regular';
       font-size: 18px;
@@ -352,14 +349,13 @@ input:focus {
       padding: 10px;
       color: #fffefe; }
       .footer__form--email:focus {
-        border: 2px solid #fffefe; }
+        border-bottom: 2px solid #fffefe;
+        outline: none; }
     .footer__form--msg {
       width: 670px;
       height: 50px;
       background-color: transparent;
-      border-top: 2px solid transparent;
-      border-left: 2px solid transparent;
-      border-right: 2px solid transparent;
+      border: none;
       border-bottom: 2px solid #afafaf;
       font-family: 'Lato-Regular';
       font-size: 18px;
@@ -369,7 +365,8 @@ input:focus {
       color: #fffefe;
       resize: none; }
       .footer__form--msg:focus {
-        border: 2px solid #fffefe; }
+        border-bottom: 2px solid #fffefe;
+        outline: none; }
     .footer__form--btn {
       height: 60px;
       width: 180px;
