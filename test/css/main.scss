@@ -1,0 +1,68 @@
+@import './parts/_reset.scss';
+@import './parts/_fonts.scss';
+@import './parts/_colors.scss';
+@import './parts/_mixins.scss';
+@import './parts/_base.scss';
+
+@import './sections/_header.scss';
+@import './sections/_design.scss';
+@import './sections/_slider.scss';
+
+
+.header {
+    &__container {
+        min-height: 100vh;
+        background: url(./../img/header-bg.png) no-repeat center;
+    }
+    &__nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    &__title {
+        font-size: 60px;
+        text-transform: uppercase;
+        font-family: 'Gilroy-ExtraBold';
+    }
+    &__subtitle {
+        font-size: 30px;
+        font-family: 'Gilroy-Light';
+    }
+    &__btn {
+        width: 230px;
+        height: 40px;
+        border-radius: 20px;
+        margin: 0 auto;
+        cursor: pointer;
+        &:hover {
+            background-color: #17a2b8;
+            border: none;
+            box-shadow: 0 0 15px rgba(23,162,184,1.5);
+        }
+    }
+}
+
+.navbar-collapse {
+    @media (min-width: 992px)  {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }    
+}
+.navbar-nav {
+    @media (min-width: 992px)  {
+        flex-direction: row;
+    }    
+}
+.navbar-toggler {
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+.navbar-toggleable-md {
+    @media (min-width: 992px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}

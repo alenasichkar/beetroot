@@ -228,7 +228,7 @@ input:focus {
   margin-bottom: 80px; }
 .works__item {
   height: 420px;
-  max-width: calc((100%-60px)/3);
+  width: calc((100% - 60px)/3);
   position: relative;
   cursor: pointer;
   transition: all 0.4s ease-in-out; }
